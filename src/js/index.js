@@ -1,3 +1,6 @@
+if (localStorage.getItem('logged') === 'true') {
+    location.href = 'map.html';
+}
 const form = document.querySelector('.form-login');
 
 const user = {
@@ -27,6 +30,7 @@ form.addEventListener('submit', (e) => {
     let password = form.elements.password.value;
 
     if (email === user.email && password === user.password) {
+        localStorage.setItem('logged', 'true');
         location.href = 'map.html';
     } else {
         alert('Usuario o contraseña incorrectos');

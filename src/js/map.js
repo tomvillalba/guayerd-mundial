@@ -1,3 +1,7 @@
+if (localStorage.getItem('logged') !== 'true') {
+    location.href = 'index.html';
+}
+
 import jugadores from "../data/jugadores.js";
 
 const selector = document.querySelector("#select-location");
@@ -19,6 +23,18 @@ document.querySelector("#select-location").addEventListener("change", (e) => {
     map.flyTo(coords, 16);
     L.marker(coords).addTo(map);
 });
+
+
+const logout = document.querySelector('.logout');
+logout.addEventListener('click', () => {
+    localStorage.clear();
+    location.href = 'index.html';
+});
+
+
+
+
+
 
 
 
