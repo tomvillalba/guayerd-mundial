@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Raleway:ital,wght@0,500;0,700;1,400&display=swap");
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	font-family: "Raleway";
+	font-weight: 500;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+body {
+	background-color: #ffffff;
+	width: 100vw;
+	height: 100vh;
+}
+main {
+	background-image: url(../public/img/Bg.png);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 94vh;
+}
+
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #ffffff;
+	width: 364px;
+	height: 370px;
+	border-radius: 5px;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: 700;
+	width: 192px;
+	height: 37px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+label {
+	width: 92px !important;
+	height: 18px !important;
+}
+
+/* footer {
+	width: 100vw;
+	height: 6vh;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	padding-right: 30px;
+} */
+
+.logo-world-cup {
+	display: none;
+}
+
+.btn {
+	background-color: #24305e;
+}
+
+.email,
+.password,
+.btn {
+	width: 300px;
+	height: 38px;
+	margin-top: 8px;
+	margin-bottom: 10px;
+}
+
+.email,
+.password {
+	font-size: 14px;
+}
+
+.show-password-container {
+	border-radius: 50%;
+	position: relative;
+	top: -9px;
+	opacity: 0.8;
+}
+
+.show-password {
+	cursor: pointer;
+	width: 25px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -25px;
+	bottom: 6px;
+	right: 6px;
+	opacity: 0.8;
+}
+
+/* .field-icon {
+	float: right;
+	margin-left: -25px;
+	margin-top: -25px;
+	position: relative;
+	z-index: 2;
+} */
+
+/* .container {
+	padding-top: 50px;
+	margin: auto;
+} */
+
+@media (max-width: 768px) {
+	main {
+		background-image: none;
+	}
+	.logo-world-cup {
+		display: flex;
+		justify-content: center;
+		width: 199px;
+		height: 238px;
+		margin-bottom: 40px;
+	}
+
+	.email,
+	.password,
+	.btn {
+		width: 249px;
+		height: 38px;
+	}
+
+	/* footer {
+		justify-content: center;
+		padding-right: 0;
+		padding-bottom: 20px;
+	} */
+}

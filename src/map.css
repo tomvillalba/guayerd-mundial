@@ -1,0 +1,99 @@
+:root {
+	--guayerd: #24305e;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* main {
+	width: 100vw;
+	height: 100vh;
+} */
+
+#map {
+	height: 90vh;
+	width: 100vw;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.logo-guayerd {
+	cursor: pointer;
+}
+
+.cerrar-sesion {
+	width: 10%;
+	background-color: var(--guayerd);
+}
+
+.cerrar-sesion1 {
+	background-color: var(--guayerd);
+}
+
+.cerrar-sesion:hover,
+.cerrar-sesion1:hover {
+	background-color: #0f1a2f;
+}
+
+.navbar {
+	height: 8%;
+}
+
+option {
+	background-color: var(--guayerd);
+	color: white;
+}
+
+.logo-guayerd {
+	margin: 0 20px;
+}
+
+.logo-guayerd-g {
+	display: none;
+}
+
+@media (min-width: 576px) {
+	.select {
+		z-index: 1000;
+		width: 25%;
+	}
+}
+@media (max-width: 575px) {
+	li {
+		flex-direction: column !important;
+	}
+	.logo-guayerd,
+	.mapa,
+	.jugadores {
+		display: none;
+	}
+	.logo-guayerd-g {
+		display: inline-block;
+	}
+
+	.scaloneta {
+		margin-top: 7px;
+	}
+	.cerrar-sesion {
+		width: 90%;
+	}
+
+	.ul {
+		justify-content: space-between;
+	}
+	.select {
+		z-index: 1000;
+		width: 80%;
+	}
+
+	.cerrar-sesion {
+		display: none;
+	}
+}
