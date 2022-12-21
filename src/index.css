@@ -60,15 +60,6 @@ label {
 	height: 18px !important;
 }
 
-/* footer {
-	width: 100vw;
-	height: 6vh;
-	display: flex;
-	justify-content: end;
-	align-items: center;
-	padding-right: 30px;
-} */
-
 .logo-world-cup {
 	display: none;
 }
@@ -109,19 +100,6 @@ label {
 	opacity: 0.8;
 }
 
-/* .field-icon {
-	float: right;
-	margin-left: -25px;
-	margin-top: -25px;
-	position: relative;
-	z-index: 2;
-} */
-
-/* .container {
-	padding-top: 50px;
-	margin: auto;
-} */
-
 @media (max-width: 768px) {
 	main {
 		background-image: none;
@@ -140,10 +118,4 @@ label {
 		width: 249px;
 		height: 38px;
 	}
-
-	/* footer {
-		justify-content: center;
-		padding-right: 0;
-		padding-bottom: 20px;
-	} */
 }

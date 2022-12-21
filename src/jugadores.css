@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Raleway:ital,wght@0,500;0,700;1,400&display=swap");
+
 :root {
 	--guayerd: #24305e;
 }
@@ -8,11 +10,12 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: "Raleway";
+	font-weight: 500;
 }
 
-#map {
-	height: 92vh;
-	width: 100vw;
+html {
+	width: 100%;
 }
 
 .pointer {
@@ -41,11 +44,6 @@
 	height: 8%;
 }
 
-option {
-	background-color: var(--guayerd);
-	color: white;
-}
-
 .logo-guayerd {
 	margin: 0 20px;
 }
@@ -54,12 +52,37 @@ option {
 	display: none;
 }
 
-@media (min-width: 576px) {
-	.select {
-		z-index: 1000;
-		width: 25%;
+.img-jugador {
+	width: 100%;
+}
+
+.jugador-dorsal {
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: #fff;
+	position: absolute;
+	top: 10px;
+	right: 16px;
+}
+
+.overflow {
+	height: 270px;
+	overflow: hidden;
+	border-radius: 10px 10px 0 0;
+}
+
+.card {
+	border-radius: 10px;
+	/* max-width: 500px; */
+	/* min-width: 200px; */
+}
+
+@media (min-width: 1368px) {
+	.nuestros-jugadores {
+		width: 20vw;
 	}
 }
+
 @media (max-width: 575px) {
 	li {
 		flex-direction: column !important;
@@ -80,12 +103,16 @@ option {
 		width: 90%;
 	}
 
+	.title-container {
+		margin-top: 0.5rem !important;
+	}
+
+	.nuestros-jugadores {
+		width: 60%;
+	}
+
 	.ul {
 		justify-content: space-between;
-	}
-	.select {
-		z-index: 1000;
-		width: 80%;
 	}
 
 	.cerrar-sesion {

@@ -1,11 +1,14 @@
+import jugadores from "../data/jugadores.js";
+
 if (localStorage.getItem('logged') !== 'true') {
     location.href = 'index.html';
 }
 
-import jugadores from "../data/jugadores.js";
-
 const selector = document.querySelector("#select-location");
-jugadores.forEach((jugador) => selector.innerHTML += `<option value=${jugador.coordenada}>${jugador.jugador}</option>`);
+
+jugadores.forEach((jugador) =>
+    selector.innerHTML +=
+    `<option value=${jugador.coordenada}>${jugador.jugador}</option>`);
 
 
 const latlng = jugadores[0].coordenada;
@@ -25,16 +28,11 @@ document.querySelector("#select-location").addEventListener("change", (e) => {
 });
 
 
-const logout = document.querySelector('.logout');
-logout.addEventListener('click', () => {
-    localStorage.clear();
+const logouts = document.querySelectorAll('.logout');
+logouts.forEach((logout) => logout.addEventListener('click', () => {
+    localStorage.setItem('logged', 'false');
     location.href = 'index.html';
-});
-
-
-
-
-
+}));
 
 
 
