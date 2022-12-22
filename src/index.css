@@ -46,6 +46,10 @@ form {
 	border-radius: 5px;
 }
 
+li {
+	list-style: none;
+}
+
 h1 {
 	font-size: 24px;
 	font-weight: 700;

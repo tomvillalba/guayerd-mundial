@@ -18,67 +18,70 @@
 		<title>Maps</title>
 	</head>
 	<body>
-		<main>
-			<nav class="navbar navbar-expand-sm navbar-light bg-light container-fluid w-100">
-				<ul
-					class="navbar navbar-expand-sm navbar-light bg-light container-fluid w-100 ul">
-					<div class="nav-item mx-2 pointer d-flex">
-						<li class="nav-item mx-2 pointer">
-							<img
-								src="../public/img/logo-guayerd.png"
-								alt="guayerd"
-								class="logo-guayerd" />
-						</li>
-						<li class="nav-item pointer">
-							<img
-								src="../public/img/logo-guayerd-g.png"
-								alt="guayerd"
-								class="logo-guayerd-g navbar-brand" />
-						</li>
-						<li class="nav-item me-4 pointer">
-							<img
-								src="../public/img/scaloneta.png"
-								alt="la scaloneta"
-								class="navbar-brand scaloneta" />
-						</li>
-					</div>
-					<li class="list-item mapa ms-5 pointer">Mapa</li>
-					<li class="list-item jugadores mx-5 pointer">Jugadores</li>
-					<li class="position-relative">
-						<button
-							class="navbar-toggler mx-3"
-							data-bs-toggle="collapse"
-							href="#collapseExample"
-							role="button"
-							aria-expanded="false"
-							aria-controls="collapseExample">
-							<span class="navbar-toggler-icon"></span>
-						</button>
+		<nav class="navbar navbar-expand-sm navbar-light bg-light container-fluid w-100">
+			<ul class="navbar-nav w-100 h-100 py-2 d-flex flex-row align-items-center ul">
+				<div class="nav-item mx-2 pointer d-flex">
+					<li class="nav-item mx-2 pointer">
+						<img
+							src="../public/img/logo-guayerd.png"
+							alt="guayerd"
+							class="logo-guayerd" />
 					</li>
-				</ul>
+					<li class="nav-item pointer">
+						<img
+							src="../public/img/logo-guayerd-g.png"
+							alt="guayerd"
+							class="logo-guayerd-g navbar-brand" />
+					</li>
+					<li class="nav-item me-4 pointer">
+						<img
+							src="../public/img/scaloneta.png"
+							alt="la scaloneta"
+							class="navbar-brand scaloneta" />
+					</li>
+				</div>
+				<li class="list-item mapa ms-5 pointer">
+					<a href="./map.html" class="text-black-50">Mapa</a>
+				</li>
+				<li class="list-item jugadores mx-5 pointer">
+					<a href="./jugadores.html" class="text-black-50">Jugadores</a>
+				</li>
+				<li class="position-relative">
+					<button
+						class="navbar-toggler mx-3"
+						data-bs-toggle="collapse"
+						href="#collapseExample"
+						role="button"
+						aria-expanded="false"
+						aria-controls="collapseExample">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</li>
+			</ul>
 
-				<div class="collapse w-100" id="collapseExample">
-					<div class="d-flex flex-column justify-content-start">
-						<div class="px-4 pt-3 pb-2">
-							<h5 class="text-dark">Mapa</h5>
-							<span class="text-black-50">Jugadores</span>
-						</div>
+			<div class="collapse w-100" id="collapseExample">
+				<div class="d-flex flex-column justify-content-start">
+					<div class="px-4 pt-3 pb-2 row m-0 p-0">
+						<a href="./map.html" class="text-dark my-2">Mapa</a>
+						<a href="./jugadores.html" class="text-black-50">Jugadores</a>
+					</div>
 
-						<div class="py-2 d-flex justify-content-center">
-							<button class="btn btn-primary cerrar-sesion1 logout">
-								<p class="text-white mb-0">Cerrar sesión</p>
-							</button>
-						</div>
+					<div class="py-2 d-flex justify-content-center">
+						<button class="btn btn-primary cerrar-sesion1 logout">
+							<p class="text-white mb-0">Cerrar sesión</p>
+						</button>
 					</div>
 				</div>
+			</div>
 
-				<button
-					type="button "
-					class="btn btn-primary btn-sm rounded-3 mx-4 cerrar-sesion logout">
-					<p class="text-white mb-0">Cerrar sesión</p>
-				</button>
-			</nav>
+			<button
+				type="button "
+				class="btn btn-primary btn-sm rounded-3 mx-4 cerrar-sesion logout">
+				<p class="text-white mb-0">Cerrar sesión</p>
+			</button>
+		</nav>
 
+		<main>
 			<div class="position-relative d-flex justify-content-center">
 				<select
 					name="selecciona un jugador"
@@ -88,7 +91,6 @@
 				<div id="map" class="position-absolute"></div>
 			</div>
 		</main>
-
 		<script
 			src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
 			integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="

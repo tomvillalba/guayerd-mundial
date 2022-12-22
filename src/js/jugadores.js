@@ -1,12 +1,13 @@
-// if (localStorage.getItem('logged') !== 'true') {
-//     location.href = 'index.html';
-// }
+if (localStorage.getItem('logged') !== 'true') {
+	location.href = 'index.html';
+}
 
-// const logouts = document.querySelectorAll('.logout');
-// logouts.forEach((logout) => logout.addEventListener('click', () => {
-//     localStorage.setItem('logged', 'false');
-//     location.href = 'index.html';
-// }));
+const logouts = document.querySelectorAll('.logout');
+logouts.forEach((logout) => logout.addEventListener('click', () => {
+	localStorage.setItem('logged', 'false');
+	//  location.href = 'index.html';
+	location.href = "index.html";
+}));
 
 // const data = await fetch("https://cors-anywhere.herokuapp.com/https://scaloneta-api.vercel.app/jugadores");
 const data = await fetch("https://639a535a3a5fbccb5264b073.mockapi.io/jugadores");
