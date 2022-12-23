@@ -1,6 +1,6 @@
 # Mundial Qatar 2022 - Proyecto final de Guayerd.
 
-Página web full responsive. Con formulario de login, mapa interactivo y galería de cartas, con datos de los jugadores de la selección Argentina.
+Página web full responsive. Con formulario de login, mapa interactivo y galería de cartas con datos de los jugadores de la selección Argentina.
 
 ## Tecnologías utilizadas:
 
