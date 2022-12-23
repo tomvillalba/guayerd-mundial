@@ -21,7 +21,6 @@ showPassword.addEventListener('click', () => {
 		showPassword.src = "../public/img/show-hide-password.png";;
 	}
 
-
 });
 
 form.addEventListener('submit', (e) => {
@@ -36,8 +35,5 @@ form.addEventListener('submit', (e) => {
 		alert('Usuario o contraseña incorrectos');
 		return;
 	}
-
-
-
 
 });

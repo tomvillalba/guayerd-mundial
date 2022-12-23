@@ -77,8 +77,6 @@ li {
 
 .card {
 	border-radius: 10px;
-	/* max-width: 500px; */
-	/* min-width: 200px; */
 }
 
 @media (min-width: 1368px) {
